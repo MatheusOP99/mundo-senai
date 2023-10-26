@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Informática</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/informatica.css">
+    
+
+    <link rel="icon" type="image/png" href="../img/icone.png">
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="quiz-elements" class="hidden">
+            <div class="quiz-container">
+                <div class="voltar">
+                    <a href="../../index.html">Voltar</a>
+                </div>
+                <div class="quiz">
+                    <h1>Quiz</h1>
+                    <p id="question">Pergunta aqui</p>
+                    <div class="answers">
+                        <button class="answer-btn" id="btn0"></button>
+                        <button class="answer-btn" id="btn1"></button>
+                        <button class="answer-btn" id="btn2"></button>
+                        <button class="answer-btn" id="btn3"></button>
+                    </div>
+                    <div id="progress-container">
+                        <div id="progress-bar"></div>
+                    </div>
+                    
+                    <button id="next-btn" class="btn next-button visible">Próxima Pergunta</button>
+
+                    <p id="timer">Tempo Restante: 10 segundos</p>
+
+                    <div class="lives-container">
+                        <p>Vidas:</p>
+                        <div id="lives">
+                            <span id="hidden1" class="heart">&hearts;</span>
+                            <span id="hidden2" class="heart">&hearts;</span>
+                            <span id="hidden3" class="heart">&hearts;</span>
+                        </div>
+                        <button id="start-quiz-button">Iniciar Quiz</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div id="result-container" style="display: none;">
+        <p>Pontuação Final: <span id="final-score-value">0</span></p>
+        <p class="escodido">Respostas Corretas: <span id="correct-answers-value">0</span></p>
+        <p class="escodido">Respostas Erradas: <span id="wrong-answers-value">0</span></p>
+        <p id="final-message">Teste</p>
+        <button class="start" id="start-quiz-button1">Reiniciar Quiz</button>
+    </div>
+    <script src="../js/informatica.js"></script>
+</body>
+</html>

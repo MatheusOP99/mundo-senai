@@ -1,0 +1,27 @@
+@media (max-width: 1100px) {
+    .logo {
+        max-width: 100px;
+    }
+
+    nav {
+        flex-direction: column;    
+    }
+
+    .curso {
+        width: 100%; /* Preencha a largura da tela */
+        justify-content: center;
+        align-items: center;
+    }
+
+    div {
+        margin: 20px;
+        max-width: 90%; /* Reduza a largura máxima */
+    }
+
+    p {
+        max-width: 90%; /* Reduza a largura máxima do parágrafo */
+    }
+
+
+    
+}

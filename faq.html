@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link rel="stylesheet" href="./src/css/estilo.css" />
+    <link rel="stylesheet" href="./src/css/scroolbar-faq.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="faq-wrapper">
+          <div class="header">
+            <h1>Dúvidas frequentes</h1>
+          </div>
+          <div class="faq-inner">
+            <div class="faq-item">
+              <h3>
+                Onde me inscrevo nos cursos?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                Para mais informações sobre cursos EAD, acesse o site
+                <a href="https://www.eadsenaies.com.br" target="_blank"
+                  >eadsenaies.com
+                </a>
+                e para cursos presenciais, acesse
+                <a
+                  href="https://www.trilhasdefuturo.mg.gov.br/"
+                  target="_blank"
+                >
+                  trilhasdefuturo.com.br</a
+                >.
+              </div>
+            </div>
+            <hr />
+            <div class="faq-item">
+              <h3>
+                Sobre o trilhas, os cursos tem algum custo?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                Não, além disso, o estudante regularmente matriculado no curso
+                do Projeto Trilhas de Futuro será beneficiado com:
+                <br />I - a isenção do pagamento da mensalidade;<br />
+                II - a disponibilização de material didático específico, podendo
+                ser impresso ou online;<br />
+                III - pagamento de vale-transporte e alimentação, conforme
+                registro de frequência apurada pela instituição.
+              </div>
+            </div>
+            <hr />
+            <div class="faq-item">
+              <h3>
+                Quais requisitos para poder participar?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                Os requisitos básicos para inscrição são que a pessoa esteja
+                regularmente matriculado no 2° e 3° ano do ensino médio, ter
+                entre 14 e 24 anos (sem limite de idade no caso do trilhas) ou
+                já ter concluído o Ensino Médio, conforme previsto na Resolução
+                4.794, no Art. 2°.
+              </div>
+            </div>
+            <hr />
+            <div class="faq-item">
+              <h3>
+                Quais os documentos necessários para a inscrição/matrícula?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                Estes documentos são necessarios:
+                <br />Certificado original de conclusão do Ensino Médio;
+                <br />Histórico escolar; <br />2 fotos 3X4, a mesma deve ser
+                recente para que a matrícula ocorra sem problemas;
+                <br />Comprovante de residência, o documento deve ser atual de
+                preferência a um mês de diferença;
+              </div>
+            </div>
+            <hr />
+            <div class="faq-item">
+              <h3>
+                Se eu ja trabalhar, ainda sim posso fazer algum curso?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                Sim. O vínculo empregatício não impede a candidatura. O
+                candidato deve apenas escolher um turno que não coincida com o
+                horário de trabalho.
+              </div>
+            </div>
+            <hr />
+
+            <div class="faq-item">
+              <h3>
+                Quais são os horários que posso fazer o curso?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                Matutino: de segunda-feira à sexta-feira, de 7h30 às 11h30 e
+                quando necessário, aos sábados no turno matutino e/ou
+                vespertino;
+                <br />Vespertino: de segunda-feira à sexta-feira, das 13h às 17h
+                e quando necessário, aos sábados no turno matutino e/ou
+                vespertino; <br />Noturno: de segunda-feira à sexta-feira, das
+                18h40 às 21h40 e aos sábados, no turno matutino e/ou vespertino.
+              </div>
+            </div>
+            <hr />
+
+            <div class="faq-item">
+              <h3>
+                Quais são as vantagens de fazer um curso no SENAI?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                Oferece a melhor educação profissional do mundo. Você pode se
+                qualificar em qualquer fase. A escola vai até você. Estude onde
+                estiver com os cursos EAD. Acompanha o mercado de trabalho. É um
+                diferencial no currículo.
+              </div>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $(".faq-plus").on("click", function () {
+        $(this).parent().parent().find(".faq-body").slideToggle();
+      });
+    </script>
+
+    <!-- tal da libras -->
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <footer>
+      <p>
+        &copy; Desenvolvido por Angelo, Bruno, Bernardo, Daniel, Deborah, Erick,
+        Igor, Lucas, Matheus O. & Yuri.
+      </p>
+
+      <a href="./index.html">SENAI</a>
+    </footer>
+  </body>
+</html>

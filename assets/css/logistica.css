@@ -1,0 +1,11 @@
+body {
+    background-image: url("../img/Fundo_quiz/19.png");
+}
+
+#progress-bar {
+    background-color: #f90036;
+}
+
+.container {
+    box-shadow: inset 0 0 5px #f90036;
+}

@@ -1,0 +1,253 @@
+/* configurações em comum dos quizes */
+
+body {
+  margin: auto;
+  text-align: center;
+  /* !!! centraliza as linhas. sem isso, msm com flex e align-itens, ele não centraliza as coisas dentro da própria div */
+  height: 100vh;
+  display: flex;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-size: 300px;
+  box-shadow: inset 0 0 50px black;
+}
+
+.container,
+.resultado,
+#result-container {
+  /*fundo*/
+  margin: auto;
+  align-items: center;
+  display: flex;
+  max-width: 500px;
+
+  /*flexing o conteudo quiz*/
+  background-color: white;
+
+  padding: 4%;
+  border-radius: 8px;
+}
+
+.container {
+  /*fundo*/
+  align-items: center;
+  margin: auto;
+  display: flex;
+
+  /*flexing o conteudo quiz*/
+
+  background-color: #fff;
+  padding: 4%;
+  border-radius: 8px;
+}
+
+.hidden {
+  margin: auto;
+}
+
+.quiz-container {
+  /*conteudo quiz*/
+  margin: auto;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h1,
+p,
+.timer,
+.question {
+  margin: 0;
+  font-weight: bold;
+  padding: 5%;
+}
+
+.answers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vw;
+}
+
+#start-quiz-button {
+  padding: 5%;
+}
+
+.answer-btn:hover,
+#start-quiz-button1:hover,
+#next-btn:hover {
+  transform: scale(1.05);
+}
+
+button {
+  font-size: larger;
+  color: #0099cc;
+  background-color: #0099ff;
+
+  text-decoration: none;
+  padding: 30px;
+  border: none;
+
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.voltar a {
+  display: flex;
+  color: #0099ff;
+  text-decoration: none;
+  width: fit-content;
+  box-shadow: 0 0 1px inset #00000034;
+  margin: auto;
+}
+
+.voltar a:hover,
+.answer-btn:hover {
+  box-shadow: 0 0 20px inset #00000034;
+}
+
+.answer-btn,
+.voltar a {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.answer-btn {
+  color: #fff;
+  background-color: #3498db;
+}
+
+#next-btn {
+  background-color: #27ae60;
+  color: #fff;
+  border-radius: 4px;
+  margin: 50px auto;
+  padding: 2%;
+}
+
+#score {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* hmmmm n tenho ctz se isso ainda fica
+
+#score {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+*/
+
+/* ... (O código CSS anterior) */
+
+/* Adicione este estilo para a caixa de confirmação */
+.confirmation-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 999;
+}
+
+.confirmation-box p {
+  color: white;
+  font-size: 24px;
+}
+
+/* Estilo para o botão de iniciar o quiz na caixa de confirmação */
+.confirmation-box button {
+  background-color: #3498db;
+  color: rgba(255, 255, 255, 0.407);
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.next-button {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  /* Adicione a transição suave para a propriedade "opacity" */
+}
+
+.next-button.visible {
+  opacity: 1;
+}
+
+/* barra de progresso */
+
+#progress-container {
+  background-color: #ccc;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#progress-bar {
+  width: 0;
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s;
+}
+
+span {
+  animation: moveUpDown 1s ease-in-out infinite;
+}
+
+.heart {
+  font-size: 90px;
+  color: #ff5959;
+  text-shadow: 0 0 5px #ff0000;
+}
+
+.resultado p {
+  font-size: larger;
+}
+
+#final-message {
+  font-size: 30px;
+  color: #8b0000;
+  text-shadow: 0 0 5px #ff7979;
+}
+
+#start-quiz-button1 {
+  margin: auto;
+}
+
+/*esconde*/
+.escodido {
+  display: none;
+}
+
+/* Media Query para telas de 480px */
+@media screen and (max-width: 480px) {
+  /* Adicione aqui as regras de estilo específicas para telas de 480px */
+  h1 {
+    font-size: 40px;
+    /* Tamanho de fonte menor para telas menores */
+  }
+
+  .answers {
+    grid-template-columns: 1fr;
+    /* Altere para uma coluna para telas menores */
+  }
+
+  .answer-btn {
+    padding: 15px;
+    /* Maior espaçamento para botões em telas menores */
+  }
+}

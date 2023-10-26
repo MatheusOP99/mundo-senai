@@ -1,0 +1,68 @@
+@media only screen and (min-width: 481px) and (max-width: 749px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .card-curso {
+        width: 95%;
+        border-radius: 20px;
+        height: 600px;
+    }
+
+    .card {
+        width: 90px;
+        height: 230px;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 750px) and (max-width: 1024px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .card-curso {
+        width: 95%;
+        border-radius: 20px;
+        height: 800px;
+    }
+
+    .card {
+        padding-bottom: -200px;
+        width: 180px;
+        height: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+
+    .topo {
+        margin-bottom: -60px;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    .card-curso {
+        width: 100vw;
+        padding: 500px 0;
+        justify-content: space-evenly;
+        margin-top: 180px;
+        padding-top: 200px;
+    }
+
+    #fist {
+        margin-top: -170px;
+    }
+
+}
